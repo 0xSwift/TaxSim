@@ -15,6 +15,12 @@
 		299B041624D37A160044FF89 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B03EB24D37A150044FF89 /* ContentView.swift */; };
 		299B041724D37A160044FF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299B03EC24D37A160044FF89 /* Assets.xcassets */; };
 		299B041824D37A160044FF89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 299B03EC24D37A160044FF89 /* Assets.xcassets */; };
+		299B042924D37A600044FF89 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042824D37A600044FF89 /* Tax.swift */; };
+		299B042B24D37C1C0044FF89 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042A24D37C1C0044FF89 /* Donation.swift */; };
+		299B042D24D37C250044FF89 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042C24D37C250044FF89 /* User.swift */; };
+		299B043024D37C5F0044FF89 /* TaxInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042F24D37C5F0044FF89 /* TaxInfoView.swift */; };
+		299B043124D37C670044FF89 /* TaxInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042F24D37C5F0044FF89 /* TaxInfoView.swift */; };
+		299B043324D37D2C0044FF89 /* DonationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B043224D37D2C0044FF89 /* DonationItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,11 @@
 		299B040C24D37A160044FF89 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		299B041024D37A160044FF89 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		299B041224D37A160044FF89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		299B042824D37A600044FF89 /* Tax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tax.swift; sourceTree = "<group>"; };
+		299B042A24D37C1C0044FF89 /* Donation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donation.swift; sourceTree = "<group>"; };
+		299B042C24D37C250044FF89 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		299B042F24D37C5F0044FF89 /* TaxInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxInfoView.swift; sourceTree = "<group>"; };
+		299B043224D37D2C0044FF89 /* DonationItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +109,8 @@
 		299B03E924D37A150044FF89 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				299B042E24D37C520044FF89 /* Views */,
+				299B042724D37A400044FF89 /* Models */,
 				299B03EA24D37A150044FF89 /* TaxSimApp.swift */,
 				299B03EB24D37A150044FF89 /* ContentView.swift */,
 				299B03EC24D37A160044FF89 /* Assets.xcassets */,
@@ -149,6 +162,25 @@
 				299B041224D37A160044FF89 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		299B042724D37A400044FF89 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				299B042824D37A600044FF89 /* Tax.swift */,
+				299B042A24D37C1C0044FF89 /* Donation.swift */,
+				299B042C24D37C250044FF89 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		299B042E24D37C520044FF89 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				299B042F24D37C5F0044FF89 /* TaxInfoView.swift */,
+				299B043224D37D2C0044FF89 /* DonationItemView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +340,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299B043024D37C5F0044FF89 /* TaxInfoView.swift in Sources */,
 				299B041524D37A160044FF89 /* ContentView.swift in Sources */,
+				299B042B24D37C1C0044FF89 /* Donation.swift in Sources */,
+				299B042924D37A600044FF89 /* Tax.swift in Sources */,
+				299B043324D37D2C0044FF89 /* DonationItemView.swift in Sources */,
+				299B042D24D37C250044FF89 /* User.swift in Sources */,
 				299B041324D37A160044FF89 /* TaxSimApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299B043124D37C670044FF89 /* TaxInfoView.swift in Sources */,
 				299B041624D37A160044FF89 /* ContentView.swift in Sources */,
 				299B041424D37A160044FF89 /* TaxSimApp.swift in Sources */,
 			);
