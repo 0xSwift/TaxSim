@@ -36,13 +36,13 @@ struct ContentView: View {
                 print("Paying User Init Salary")
                 user.money += user.salary
                 
-                Later.scheduleRepeatedTask(delay: .hours(1)) { (task) in
+                Later.scheduleRepeatedTask(delay: .minutes(1)) { (task) in
                     user.progressToPayDay = 0
                     user.money += user.salary
                 }
                 
                 Later.scheduleRepeatedTask(delay: .seconds(1)) { (task) in
-                    user.progressToPayDay += 1 / 60 / 60
+                    user.progressToPayDay += 1 / 60
                 }
             }
         }
