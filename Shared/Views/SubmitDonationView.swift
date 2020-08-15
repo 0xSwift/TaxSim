@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SubmitDonationView: View {
     @State var selectedTaxCategory: TaxCategory = .education
-    @State var donationAmount: Double = 0.99
+    @State var donationAmount: Double = 0
     
     @Binding var user: User
     @Binding var taxes: [Tax]
@@ -24,8 +24,8 @@ struct SubmitDonationView: View {
             }
             
             HStack {
-                Text("$0.99")
-                Slider(value: $donationAmount, in: 0.99 ... user.money) {
+                Text("$0")
+                Slider(value: $donationAmount, in: 0 ... user.money) {
                     Text(String(format: "$%.2f", donationAmount))
                 }
                 Text(String(format: "$%.2f", user.money))
@@ -40,6 +40,11 @@ struct SubmitDonationView: View {
     }
     
     func donate() {
+        guard donationAmount > 0 else {
+            print("Not enough money...")
+            return
+        }
+        
         guard let taxIndex = taxes.firstIndex(where: { $0.category == selectedTaxCategory }) else {
             print("Couldn't find Tax...")
             return

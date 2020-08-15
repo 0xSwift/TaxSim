@@ -11,7 +11,7 @@ import Later
 struct ContentView: View {
     @State var isPresentingDonationView = false
     
-    @State var user = User(name: "Leif", money: 100)
+    @State var user = User(name: "Leif", money: 0)
     @State var taxes = TaxCategory.allCases.map { Tax(category: $0) }
     
     var body: some View {
