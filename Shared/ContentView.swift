@@ -6,10 +6,33 @@
 //
 
 import SwiftUI
+import Later
 
 struct ContentView: View {
+    @State var isPresentingDonationView = false
+    
+    @State var user = User(name: "Leif", money: 100)
+    @State var taxes = TaxCategory.allCases.map { Tax(category: $0) }
+    
     var body: some View {
-        Text("Hello, world!").padding()
+        NavigationView {
+            List {
+                UserInfoView(user: $user)
+                    .padding()
+                TaxInfoView(taxes: taxes)
+                    .frame(maxHeight: .infinity, alignment: .center)
+            }
+            .navigationBarItems(trailing: Button(action: {
+                isPresentingDonationView.toggle()
+            }, label: {
+                Text("Donate")
+            }))
+            .sheet(isPresented: $isPresentingDonationView) {
+                SubmitDonationView(user: $user,
+                                   taxes: $taxes,
+                                   isPresenting: $isPresentingDonationView).padding()
+            }
+        }
     }
 }
 

@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290B6DDB24E83DAB007C7093 /* Later in Frameworks */ = {isa = PBXBuildFile; productRef = 290B6DDA24E83DAB007C7093 /* Later */; };
+		290B6DDD24E844F2007C7093 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DDC24E844F2007C7093 /* UserInfoView.swift */; };
+		290B6DDE24E844F2007C7093 /* UserInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DDC24E844F2007C7093 /* UserInfoView.swift */; };
+		290B6DE024E84542007C7093 /* SubmitDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DDF24E84542007C7093 /* SubmitDonationView.swift */; };
+		290B6DE124E84542007C7093 /* SubmitDonationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DDF24E84542007C7093 /* SubmitDonationView.swift */; };
+		290B6DE324E84A24007C7093 /* PayDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DE224E84A24007C7093 /* PayDayView.swift */; };
+		290B6DE424E84A24007C7093 /* PayDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B6DE224E84A24007C7093 /* PayDayView.swift */; };
+		298DB43B24E83C2C007EC998 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042C24D37C250044FF89 /* User.swift */; };
+		298DB43C24E83C31007EC998 /* Tax.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042824D37A600044FF89 /* Tax.swift */; };
+		298DB43D24E83C31007EC998 /* Donation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B042A24D37C1C0044FF89 /* Donation.swift */; };
+		298DB43E24E83C39007EC998 /* DonationItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B043224D37D2C0044FF89 /* DonationItemView.swift */; };
 		299B040624D37A160044FF89 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B040524D37A160044FF89 /* Tests_iOS.swift */; };
 		299B041124D37A160044FF89 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B041024D37A160044FF89 /* Tests_macOS.swift */; };
 		299B041324D37A160044FF89 /* TaxSimApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 299B03EA24D37A150044FF89 /* TaxSimApp.swift */; };
@@ -41,6 +52,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290B6DDC24E844F2007C7093 /* UserInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoView.swift; sourceTree = "<group>"; };
+		290B6DDF24E84542007C7093 /* SubmitDonationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitDonationView.swift; sourceTree = "<group>"; };
+		290B6DE224E84A24007C7093 /* PayDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayDayView.swift; sourceTree = "<group>"; };
 		299B03EA24D37A150044FF89 /* TaxSimApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxSimApp.swift; sourceTree = "<group>"; };
 		299B03EB24D37A150044FF89 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		299B03EC24D37A160044FF89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290B6DDB24E83DAB007C7093 /* Later in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +194,9 @@
 			children = (
 				299B042F24D37C5F0044FF89 /* TaxInfoView.swift */,
 				299B043224D37D2C0044FF89 /* DonationItemView.swift */,
+				290B6DDC24E844F2007C7093 /* UserInfoView.swift */,
+				290B6DDF24E84542007C7093 /* SubmitDonationView.swift */,
+				290B6DE224E84A24007C7093 /* PayDayView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +217,9 @@
 			dependencies = (
 			);
 			name = iOS;
+			packageProductDependencies = (
+				290B6DDA24E83DAB007C7093 /* Later */,
+			);
 			productName = iOS;
 			productReference = 299B03F124D37A160044FF89 /* TaxSim.app */;
 			productType = "com.apple.product-type.application";
@@ -290,6 +311,9 @@
 				Base,
 			);
 			mainGroup = 299B03E424D37A150044FF89;
+			packageReferences = (
+				290B6DD924E83DAB007C7093 /* XCRemoteSwiftPackageReference "Later" */,
+			);
 			productRefGroup = 299B03F224D37A160044FF89 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,7 +366,10 @@
 			files = (
 				299B043024D37C5F0044FF89 /* TaxInfoView.swift in Sources */,
 				299B041524D37A160044FF89 /* ContentView.swift in Sources */,
+				290B6DE324E84A24007C7093 /* PayDayView.swift in Sources */,
 				299B042B24D37C1C0044FF89 /* Donation.swift in Sources */,
+				290B6DE024E84542007C7093 /* SubmitDonationView.swift in Sources */,
+				290B6DDD24E844F2007C7093 /* UserInfoView.swift in Sources */,
 				299B042924D37A600044FF89 /* Tax.swift in Sources */,
 				299B043324D37D2C0044FF89 /* DonationItemView.swift in Sources */,
 				299B042D24D37C250044FF89 /* User.swift in Sources */,
@@ -354,7 +381,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298DB43B24E83C2C007EC998 /* User.swift in Sources */,
 				299B043124D37C670044FF89 /* TaxInfoView.swift in Sources */,
+				290B6DE424E84A24007C7093 /* PayDayView.swift in Sources */,
+				298DB43C24E83C31007EC998 /* Tax.swift in Sources */,
+				290B6DE124E84542007C7093 /* SubmitDonationView.swift in Sources */,
+				290B6DDE24E844F2007C7093 /* UserInfoView.swift in Sources */,
+				298DB43D24E83C31007EC998 /* Donation.swift in Sources */,
+				298DB43E24E83C39007EC998 /* DonationItemView.swift in Sources */,
 				299B041624D37A160044FF89 /* ContentView.swift in Sources */,
 				299B041424D37A160044FF89 /* TaxSimApp.swift in Sources */,
 			);
@@ -734,6 +768,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		290B6DD924E83DAB007C7093 /* XCRemoteSwiftPackageReference "Later" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/0xLeif/Later";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		290B6DDA24E83DAB007C7093 /* Later */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 290B6DD924E83DAB007C7093 /* XCRemoteSwiftPackageReference "Later" */;
+			productName = Later;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 299B03E524D37A150044FF89 /* Project object */;
 }

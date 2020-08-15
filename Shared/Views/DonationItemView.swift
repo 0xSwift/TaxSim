@@ -34,6 +34,7 @@ struct DonationItemView_Previews: PreviewProvider {
     static var previews: some View {
         DonationItemView(donation: Donation(message: "For EDU",
                                             amount: 1234.5,
-                                            user: User(name: "user")))
+                                            user: User(name: "user",
+                                                       money: 100)))
     }
 }

@@ -9,6 +9,10 @@ import Foundation
 
 struct User: Codable, Hashable {
     let name: String
+    var salary: Double = {
+        Double.random(in: 100 ... 10_000)
+    }()
     
+    var money: Double = 0
     var donations: [Donation] = []
 }
