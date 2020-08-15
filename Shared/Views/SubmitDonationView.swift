@@ -17,6 +17,9 @@ struct SubmitDonationView: View {
     
     var body: some View {
         VStack {
+            UserInfoView(user: $user)
+                .frame(height: 32, alignment: .center)
+            
             Picker(selection: $selectedTaxCategory, label: Text("Picker")) {
                 ForEach(TaxCategory.allCases, id: \.self) { category in
                     Text(category.title)
@@ -30,6 +33,8 @@ struct SubmitDonationView: View {
                 }
                 Text(String(format: "$%.2f", user.money))
             }
+            
+            
             
             Spacer()
             

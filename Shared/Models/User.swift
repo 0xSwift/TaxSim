@@ -15,4 +15,5 @@ struct User: Codable, Hashable {
     
     var money: Double = 0
     var donations: [Donation] = []
+    var progressToPayDay: Float = 0
 }
